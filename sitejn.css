@@ -7,9 +7,9 @@ header {
 nav{/*pour aligner le menu*/
 
     display:flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     display: block;
-    margin-right:auto;
+    margin-left:auto;
     ;
 }
 /*pour supprimer les puces dans le menu*/
@@ -34,7 +34,7 @@ display:flex;
     font-weight:700;
     background:white;
     min-width: 100px;
-float: right;
+float: left;/* liste horizontale*/
 
 }
 
@@ -43,7 +43,8 @@ float: right;
 img{
     width: 120px;
     height: 120px;
-    display:block;/
+    display:block;
+margin-left: auto;
    /
 
 
@@ -145,9 +146,77 @@ footer{
     text-align: center;
 }
 
-@media screen and (max-width: 640px) {
-    .bloc {
-        display:block;
-        clear:both;
+@media screen and (max-width: 1000px) and (orientation:portrait){
+
+
+
+    .container {
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: auto;
     }
-}
+
+    .containerbis{
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-top: 5px;/* espacement entre les 2 containers*/
+    }
+
+    #section1{
+        border: lightgrey solid;
+        background-color: mediumpurple;
+
+        horiz-align: center;
+        text-align:justify-all;
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        height: 20%;
+                margin: auto;
+
+    }
+
+
+    #section2 {
+
+        border: lightgrey solid;
+        background-color: rebeccapurple;
+        vertical-align: auto;
+        text-align:center;
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        height: 20%;
+        border-radius: 30px;
+        margin:auto;
+    }
+
+    #section3{
+        border: lightgrey solid;
+        background-color: purple;
+        vertical-align: auto;
+        text-align: center;
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        height: 20%;
+        border-radius: 30px;
+        margin:auto;
+    }
+
+    #section4{
+        border: lightgrey solid;
+        background-color: darkviolet;
+        vertical-align: auto;
+        text-align: center;
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        height: 20%;
+        border-radius: 30px; /*angles arrondis*/
+        margin:auto;
+    }
